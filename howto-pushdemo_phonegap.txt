@@ -1,0 +1,33 @@
+## http://docs.phonegap.com/develop/push-notifications/
+
+
+sudo npm install -g phonegap
+
+## npm i -g phonegap to update 
+
+sudo phonegap create pushdemo --id "com.ilab.pushdemo" --name "pushdemo" --template phonegap-template-push
+
+cd pushdemo/www
+
+sudo phonegap serve
+
+open the app in phonegap app on iphone and connect to :3000. 
+
+
+then in another terminal
+
+sudo phonegap push --deviceID d6ca4d79946f8bef94a431dd72f0c3884d05e2f31999c2fcd601387fd55f8bb2 --service apns --payload '{ "aps": { "alert": "Hello World" } }'
+
+
+
+
+
+??????
+this guy has a php using curl to android push.
+https://phonegappro.com/tutorials/apache-cordova-phonegap-push-notification-tutorial-part-1/
+
+https://phonegappro.com/tutorials/integrate-google-map-with-phonegap/
+
+
+
+
